@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- fa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Xuất 3 số theo thứ tự tăng dần</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for=""> Nhập số thứ 1</label>
+                                <input type="text" name="" id="soThu1"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập số thứ 2</label>
+                                <input type="text" name="" id="soThu2"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập số thứ 3</label>
+                                <input type="text" name="" id="soThu3"  class="form-control">
+                            </div>
+                            <button class="btn btn-success" id="ketQua">Kết quả</button>
+                            <div class="mt-2" id="thongBao"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Xin Chào </div>
+                        <div class="card-body">
+                            <select class="form-control" id="thanhVien">
+                                <option value="#"> Chọn Thành viên</option>
+                                <option value="Bố"> Bố</option>
+                                <option value="Mẹ"> Mẹ</option>
+                                <option value="Anh Trai"> Anh Trai</option>
+                                <option value="Em Gái"> Em Gái</option>
+                            </select>
+                            <button class="btn btn-success" id="btnChao">Gửi lời Chào</button>
+                            <div class="mt-2" id="thongBaoLoiChao"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Đếm số chẵn lẻ</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for=""> Nhập số thứ 1</label>
+                                <input type="text" name="" id="num1"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập số thứ 2</label>
+                                <input type="text" name="" id="num2"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập số thứ 3</label>
+                                <input type="text" name="" id="num3"  class="form-control">
+                            </div>
+                            <button class="btn btn-success" id="btnDemSo">Đếm</button>
+                            <div class="mt-2" id="thongBaoDemSo"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Đoán hình tam giác</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for=""> Nhập độ dài cạnh 1</label>
+                                <input type="text" name="" id="canh1"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập độ dài cạnh 2</label>
+                                <input type="text" name="" id="canh2"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập độ dài cạnh 3</label>
+                                <input type="text" name="" id="canh3"  class="form-control">
+                            </div>
+                            <button class="btn btn-success" id="btnDuDoan">Dự Đoán</button>
+                            <div class="mt-2" id="thongBaoTamGiac"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Tính Ngày Tháng Năm</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for=""> Nhập ngày</label>
+                                <input type="number" name="" id="nagy"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập tháng</label>
+                                <input type="number" name="" id="thang"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập năm</label>
+                                <input type="number" name="" id="nam"  class="form-control">
+                            </div>
+                            <div id="btnNgay">
+                                <button class="btn btn-success" id="btnNgayHomQua">Ngày Hôm Qua</button>
+                            <button class="btn btn-success" id="btnNgayMai">Ngày Mai</button>
+                            </div>
+                            <div class="mt-2" id="thongBaoTamGiac"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Tính Ngày Tháng Năm</div>
+                        <div class="card-body">
+                         
+                            <div class="form-group">
+                                <label for="">Nhập tháng</label>
+                                <input type="number" name="" id="date"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Nhập năm</label>
+                                <input type="number" name="" id="year"  class="form-control">
+                            </div>
+                            
+                                <button class="btn btn-success" id="btnTinhDate">Tính Ngày</button>
+                         
+                           
+                            <div class="mt-2" id="thongBaoNgay"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header"> Đọc số</div>
+                        <div class="card-body">
+                         
+                            <div class="form-group">
+                                <label for="">Nhập số có 3 chữ số</label>
+                                <input type="number" name="" id="soCo3"  class="form-control">
+                            </div>
+                         
+                            
+                                <button class="btn btn-success" id="btnDocSo">Đọc số</button>
+                         
+                           
+                            <div class="mt-2" id="thongBaoSo"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">  Tìm sinh viên xa trường nhất</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for=""> Sinh Viên 1</label>
+                                <input type="text" name="" id="hoTen1"  class="form-control">
+                                <label for="">Nhập Tọa độ x</label>
+                                <input type="number" name="" id="x1"  class="form-control">
+                                <label for="">Nhập Tọa độ y</label>
+                                <input type="number" name="" id="y1"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sinh Viên 2</label>
+                                <input type="text" name="" id="hoTen2"  class="form-control">
+                                <label for="">Nhập Tọa độ x</label>
+                                <input type="number" name="" id="x2"  class="form-control">
+                                <label for="">Nhập Tọa độ y</label>
+                                <input type="number" name="" id="y2"  class="form-control">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sinh Viên  3</label>
+                                <input type="text" name="" id="hoTen3"  class="form-control">
+                                <label for="">Nhập Tọa độ x</label>
+                                <input type="number" name="" id="x3"  class="form-control">
+                                <label for="">Nhập Tọa độ y</label>
+                                <input type="number" name="" id="y3"  class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <h3>Trường Học</h3>
+                                <label for="">Nhập Tọa độ x</label>
+                                <input type="number" name="" id="x"  class="form-control">
+                                <label for="">Nhập Tọa độ y</label>
+                                <input type="number" name="" id="y"  class="form-control">
+                            </div>
+                            
+                                <button class="btn btn-success" id="btnS">Tìm</button>
+                            
+                            <div class="mt-2" id="thongBaoQuangDuong"></div>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+   
+
+
+        
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    </body>
+</html>
